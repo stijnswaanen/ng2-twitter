@@ -14,7 +14,7 @@
     "angular",
     "oauth"
   ],
-  "author": "Aoinu",
+  "author": "Stijn Swaanen",
   "license": "MIT",
   "devDependencies": {
     "typescript": "~3.1.6"

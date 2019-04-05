@@ -1,17 +1,19 @@
-# ng2-twitter
-Angular2 service of authorized request for twitter.
+# ng2-twitter-httpclient
+Angular service of authorized request for twitter.
+This is a port of the ng2-twitter package which makes use of the deprecated HttpModule in Angular.
+Therefore the original package cannot be used in Angular 4 or higher. 
 
 ## Installation
 Install through `npm`:
 
-`npm install --save ng2-twitter`
+`npm install --save ng2-twitter-httpclient`
 
 ## Usage
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TwitterService } from 'ng2-twitter';
@@ -23,7 +25,7 @@ import { TwitterService } from 'ng2-twitter';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
   providers: [TwitterService], // Add
   bootstrap: [AppComponent]
@@ -33,7 +35,7 @@ export class AppModule { }
 
 ```typescript
 import { Component } from '@angular/core';
-import { TwitterService } from 'ng2-twitter';
+import { TwitterService } from 'ng2-twitter-httpclient';
 
 @Component({
   selector: 'app-root',
