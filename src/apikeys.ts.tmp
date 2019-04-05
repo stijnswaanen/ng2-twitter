@@ -1,9 +1,0 @@
-export var appkey = {
-  consumerKey: '',
-  consumerSecret: ''
-};
-
-export var token = {
-  token: '',
-  tokenSecret: ''
-};

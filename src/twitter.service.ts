@@ -1,9 +1,4 @@
 import { Injectable } from '@angular/core';
-import {
-	Http,
-	Headers,
-	Response
-} from '@angular/http';
 import { Observable } from 'rxjs';
 
 
@@ -14,6 +9,7 @@ import {
 	OAuthToken
 } from './oauth.service';
 import { Sha1Service } from './sha1.service';
+import {HttpClient} from '@angular/common/http';
 
 
 @Injectable()
@@ -21,7 +17,7 @@ export class TwitterService {
     private authRequest: AuthorizedRequestService;
 
     constructor(
-        private http: Http
+        private http: HttpClient
     ){
         // 強引にDI　求む修正
         this.authRequest = new AuthorizedRequestService(

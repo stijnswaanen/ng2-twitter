@@ -1,7 +1,7 @@
 {
-  "name": "ng2-twitter",
-  "version": "0.3.0",
-  "description": "Angular2 service of authorized request for twitter.",
+  "name": "ng2-twitter-httpclient",
+  "version": "0.1.0",
+  "description": "Angular service of authorized request for twitter.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -11,25 +11,25 @@
   },
   "keywords": [
     "twitter",
-    "angular2",
+    "angular",
     "oauth"
   ],
   "author": "Aoinu",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^2.0.3"
+    "typescript": "~3.1.6"
   },
   "dependencies": {
-    "@angular/core": "^2.3.1",
-    "@angular/http": "^2.3.1",
+    "@angular/core": "^7.2.2",
+    "@angular/common": "^7.2.2",
     "@types/jssha": "0.0.29",
     "jssha": "^2.2.0",
-    "rxjs": "^5.0.1",
-    "zone.js": "^0.7.2"
+    "rxjs": "~6.3.3",
+    "zone.js": "~0.8.29"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aoinu/ng2-twitter.git"
+    "url": "https://github.com/stijnswaanen/ng2-twitter-httpClient.git"
   },
   "private": false
 }
