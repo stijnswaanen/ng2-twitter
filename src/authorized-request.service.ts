@@ -15,7 +15,7 @@ export class AuthorizedRequestService {
 
 	get(url: string, query: any, oauthKey: OAuthKey, oauthToken: OAuthToken){
 		let authHeader = new HttpHeaders();
-		authHeader.append('Authorization',this.oauth.createHeaderString('GET',url,query,oauthKey,oauthToken,this.oauth.createNonce(10),this.oauth.createTimestamp()));
+		authHeader = authHeader.append('Authorization',this.oauth.createHeaderString('GET',url,query,oauthKey,oauthToken,this.oauth.createNonce(10),this.oauth.createTimestamp()));
 
 		let requestUrl = url;
 		let queryArray:any[] = [];
@@ -37,8 +37,8 @@ export class AuthorizedRequestService {
 
 	post(url: string, params: any, oauthKey: OAuthKey, oauthToken: OAuthToken){
 		let authHeader = new HttpHeaders();
-		authHeader.append('Content-Type','application/x-www-form-urlencoded');
-		authHeader.append('Authorization',this.oauth.createHeaderString('POST',url,params,oauthKey,oauthToken,this.oauth.createNonce(10),this.oauth.createTimestamp()));
+        authHeader = authHeader.append('Content-Type','application/x-www-form-urlencoded');
+        authHeader = authHeader.append('Authorization',this.oauth.createHeaderString('POST',url,params,oauthKey,oauthToken,this.oauth.createNonce(10),this.oauth.createTimestamp()));
 
 
 		let paramArray:any[] = [];
