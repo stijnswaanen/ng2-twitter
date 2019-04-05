@@ -1,15 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-
+import {HttpClient} from '@angular/common/http';
 
 import { AuthorizedRequestService } from './authorized-request.service';
-import {
-	OAuthService,
-	OAuthKey,
-	OAuthToken
-} from './oauth.service';
+import { OAuthService, OAuthKey, OAuthToken } from './oauth.service';
 import { Sha1Service } from './sha1.service';
-import {HttpClient} from '@angular/common/http';
 
 
 @Injectable()
