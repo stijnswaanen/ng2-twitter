@@ -1,6 +1,6 @@
 {
   "name": "ng2-twitter-httpclient",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular service of authorized request for twitter. This is a port of ng2-twitter which uses the HttpClientModule instead of deprecated HttpModule",
   "homepage": "https://github.com/stijnswaanen/ng2-twitter-httpClient.git#readme",
   "main": "dist/index.js",
